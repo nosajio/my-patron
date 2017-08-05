@@ -1,0 +1,120 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  font: 18px Helvetica, "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(163, 31, 31);
+}
+
+/* Typography */
+h1, h2, h3, h4 { 
+  display: block;
+  margin: 0;
+}
+
+/* The Page */
+.page-top,
+.page-main
+.base-footer {
+  width: 100%;
+}
+
+.page-top {
+  padding: 3rem 15px;
+  color: white;
+  text-align: center; 
+}
+
+.page-footer {
+  margin: 3rem 0;
+  color: white;
+  text-align: center;
+}
+
+.page-main {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 3%;
+  padding: 3rem;
+  background: white;
+}
+
+.about, .support-once, .support-tiers {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.about-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: black;
+  margin: 0 auto;
+}
+
+.about-video > span {
+  position: absolute;
+  top: 50%; left: 0;
+  display: block;
+  width: 100%;
+  color: #b4b4b4;
+  text-align: center;
+}
+
+.about-video::after {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+.support-once {
+  
+}
+
+.support-once-button {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0 0;
+}
+
+
+.support-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0 0;
+}
+
+.support-tier {
+  display: block;
+  margin: 1rem 0;
+}
+
+.support-tier h3 {
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 780px) {
+  .support-list {
+    flex-flow: row nowrap;
+    padding: 2rem 0 0;
+  }
+  
+  .support-tier {
+    display: block;
+    margin: 0 2rem;
+  }
+}
